@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style> .cwidth { display: inline-block; width: 100px; } </style>
+  </head>
+  <body>
+    <center>
+      <table>
+        <td>
+          <select id="angle" value="magnitude">
+            <option value="magnitude">Magnitude</option>
+            <option value="angle">Angle</option>
+          </select>
+        </td>
+        <td>
+          <canvas id="main"></canvas>
+        </td>
+      </div>
+      <table>
+        <tr>
+          <td>R (range)</td>
+          <td>
+            <input id="rmin" placeholder="rmin" value="0"/>
+            <input id="rmax" placeholder="rmax" value="10"/>
+          </td>
+        </tr>
+        <tr>
+          <td>q</td>
+          <td>
+            <input id="q" placeholder="q" value="1e-9"/>
+          </td>
+        </tr>
+        <tr>
+          <td>s</td>
+          <td>
+            <input id="s" placeholder="s" value="1"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Theta</td>
+          <td>
+            <input id="theta" placeholder="theta" value="45"/>
+            OR plot vs theta (-pi to pi, max R): <input type="checkbox" id="thetarange">
+          </td>
+        </tr>
+        <tr>
+          <td>Function</td>
+          <td>
+            <input id="function" placeholder="f(q, s, r, t)" value=""/>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <script src="main.js"></script>
+    </center>
+  </body>
+</html>
